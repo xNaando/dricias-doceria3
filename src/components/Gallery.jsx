@@ -42,15 +42,15 @@ export default function Gallery() {
           <span className="text-primary-600 font-semibold uppercase tracking-wider text-sm">
             Galeria
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mt-2 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mt-2 mb-4">
             Inspirações para sua próxima encomenda
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-base sm:text-lg text-gray-600">
             Um pouquinho do estilo e do cuidado em cada detalhe.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {galleryItems.map((item, index) => (
             <div
               key={index}
@@ -66,11 +66,11 @@ export default function Gallery() {
                 }}
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300" />
 
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <span className="text-sm font-medium text-primary-200">{item.category}</span>
-                <h3 className="text-xl font-serif font-bold mt-1">{item.title}</h3>
+              <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-6 text-white translate-y-0 sm:transform sm:translate-y-full sm:group-hover:translate-y-0 transition-transform duration-300">
+                <span className="text-xs sm:text-sm font-medium text-primary-200">{item.category}</span>
+                <h3 className="text-base sm:text-xl font-serif font-bold mt-1 leading-tight">{item.title}</h3>
               </div>
             </div>
           ))}
@@ -81,7 +81,7 @@ export default function Gallery() {
             href={buildWhatsAppUrl('Olá! Queria ver mais fotos e opções de encomenda.')}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary inline-flex items-center gap-2"
+            className="btn-secondary inline-flex items-center gap-2 w-full sm:w-auto justify-center"
           >
             <MessageCircle className="w-5 h-5" />
             <span>Pedir catálogo no WhatsApp</span>

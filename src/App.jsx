@@ -27,11 +27,11 @@ function App() {
         href={buildWhatsAppUrl('Olá! Gostaria de fazer um pedido/orçamento.')}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 rounded-full bg-green-500 px-5 py-3 text-white shadow-xl hover:bg-green-600 transition-colors"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 inline-flex items-center gap-2 rounded-full bg-green-500 px-4 sm:px-5 py-3 text-white shadow-xl hover:bg-green-600 transition-colors"
         aria-label="Chamar no WhatsApp"
       >
         <MessageCircle className="h-5 w-5" />
-        <span className="font-semibold">WhatsApp</span>
+        <span className="font-semibold text-sm sm:text-base">WhatsApp</span>
       </a>
     </div>
   )

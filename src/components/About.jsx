@@ -27,29 +27,29 @@ export default function About() {
   return (
     <section id="about" className="section-padding bg-white">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="space-y-6 sm:space-y-8">
             <div>
               <span className="text-primary-600 font-semibold uppercase tracking-wider text-sm">
                 Sobre a doceria
               </span>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold mt-2 mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mt-2 mb-4">
                 Confeitaria artesanal para momentos especiais
               </h2>
             </div>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
               A Drícia&apos;s Doceria nasceu com um propósito simples: transformar ocasiões em memórias doces. Aqui,
               cada encomenda é feita sob medida, com atenção ao que você imagina e ao que seu evento precisa.
             </p>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
               Seja para aniversários, comemorações ou presentes, a proposta é entregar sabor, acabamento caprichado e
               uma experiência leve do começo ao fim: você chama no WhatsApp, define os detalhes e recebe tudo com
               segurança.
             </p>
 
-            <div className="grid grid-cols-2 gap-6 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 pt-2 sm:pt-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -76,7 +76,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-primary-200 rounded-full blur-2xl opacity-50" />
+            <div className="hidden sm:block absolute -bottom-8 -right-8 w-32 h-32 bg-primary-200 rounded-full blur-2xl opacity-50" />
           </div>
         </div>
       </div>

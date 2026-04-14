@@ -9,25 +9,25 @@ export default function Contact() {
           <span className="text-primary-600 font-semibold uppercase tracking-wider text-sm">
             Contato
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mt-2 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mt-2 mb-4">
             Peça pelo WhatsApp
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-base sm:text-lg text-gray-600">
             Encomendas e orçamentos com atendimento direto e rápido.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-12">
           <div className="space-y-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-serif font-bold text-gray-900 mb-6">
+            <div className="bg-white rounded-2xl p-5 sm:p-8 shadow-lg">
+              <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-900 mb-5 sm:mb-6">
                 Informações
               </h3>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary-600" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-primary-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Endereço</h4>
@@ -40,7 +40,7 @@ export default function Contact() {
                       href={buildMapsUrl()}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex mt-3 text-primary-600 font-semibold hover:text-primary-700 transition-colors"
+                      className="inline-flex mt-2 sm:mt-3 text-primary-600 font-semibold hover:text-primary-700 transition-colors"
                     >
                       Ver no Google Maps →
                     </a>
@@ -48,8 +48,8 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary-600" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Telefone/WhatsApp</h4>
@@ -65,12 +65,12 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-primary-600" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-primary-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Horários</h4>
-                    <div className="mt-2 space-y-2 text-gray-700">
+                    <div className="mt-2 space-y-2 text-sm sm:text-base text-gray-700">
                       <div className="grid grid-cols-[1fr_auto] gap-x-6">
                         <span>domingo</span>
                         <span>Fechado</span>
@@ -105,8 +105,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-serif font-bold text-gray-900 mb-6">
+            <div className="bg-white rounded-2xl p-5 sm:p-8 shadow-lg">
+              <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-900 mb-5 sm:mb-6">
                 Como encomendar
               </h3>
 
@@ -150,7 +150,7 @@ export default function Contact() {
           </div>
 
           <div className="bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col h-full">
-            <div className="min-h-[420px] lg:flex-1">
+            <div className="min-h-[300px] sm:min-h-[420px] lg:flex-1">
               <iframe
                 title="Mapa"
                 src={buildMapsEmbedUrl()}
@@ -160,7 +160,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="p-6">
+            <div className="p-4 sm:p-6">
               <a
                 href={buildWhatsAppUrl('Olá! Gostaria de fazer um pedido/orçamento.')}
                 target="_blank"

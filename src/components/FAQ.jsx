@@ -28,10 +28,10 @@ export default function FAQ() {
           <span className="text-primary-600 font-semibold uppercase tracking-wider text-sm">
             Dúvidas
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mt-2 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mt-2 mb-4">
             Perguntas frequentes
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-base sm:text-lg text-gray-600">
             Se a sua dúvida não estiver aqui, chama no WhatsApp.
           </p>
         </div>
@@ -40,13 +40,13 @@ export default function FAQ() {
           {items.map((item) => (
             <details
               key={item.q}
-              className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm open:shadow-md transition-shadow"
+              className="group rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 shadow-sm open:shadow-md transition-shadow"
             >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 font-semibold text-gray-900">
-                <span>{item.q}</span>
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 sm:gap-6 font-semibold text-gray-900">
+                <span className="text-sm sm:text-base">{item.q}</span>
                 <ChevronDown className="h-5 w-5 text-gray-500 transition-transform group-open:rotate-180" />
               </summary>
-              <p className="mt-4 text-gray-600 leading-relaxed">{item.a}</p>
+              <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-600 leading-relaxed">{item.a}</p>
             </details>
           ))}
         </div>
@@ -56,7 +56,7 @@ export default function FAQ() {
             href={buildWhatsAppUrl('Olá! Tenho uma dúvida sobre uma encomenda.')}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary inline-flex items-center gap-2"
+            className="btn-primary inline-flex items-center gap-2 w-full sm:w-auto justify-center"
           >
             Tirar dúvida no WhatsApp
           </a>

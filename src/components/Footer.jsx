@@ -4,12 +4,12 @@ import { buildWhatsAppUrl, site } from '../lib/site'
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container-custom py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="container-custom py-12 sm:py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Cake className="w-8 h-8 text-primary-400" />
-              <span className="text-2xl font-serif font-bold">{site.name}</span>
+              <span className="text-xl sm:text-2xl font-serif font-bold">{site.name}</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
               Confeitaria artesanal para transformar aniversários, eventos e presentes em memórias doces.
@@ -78,7 +78,7 @@ export default function Footer() {
               href={buildWhatsAppUrl('Olá! Quero fazer um pedido/orçamento.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-green-500 px-5 py-3 font-semibold hover:bg-green-600 transition-colors"
+              className="mt-6 inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-full bg-green-500 px-5 py-3 font-semibold hover:bg-green-600 transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp
@@ -86,8 +86,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} {site.name}. Todos os direitos reservados.</p>
+        <div className="border-t border-gray-800 mt-10 sm:mt-12 pt-6 sm:pt-8 text-center text-gray-400">
+          <p className="text-sm sm:text-base">© {new Date().getFullYear()} {site.name}. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

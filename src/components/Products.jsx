@@ -48,27 +48,27 @@ export default function Products() {
           <span className="text-primary-600 font-semibold uppercase tracking-wider text-sm">
             Produtos e encomendas
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mt-2 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mt-2 mb-4">
             O que a Drícia&apos;s Doceria pode criar para você
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-base sm:text-lg text-gray-600">
             Escolha uma categoria e peça um orçamento pelo WhatsApp. A personalização acontece nos detalhes.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
           {categories.map((category, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              className="group bg-white rounded-2xl p-5 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <category.icon className="w-8 h-8 text-primary-600" />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+                <category.icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary-600" />
               </div>
 
-              <h3 className="text-2xl font-serif font-bold text-gray-900 mb-3">{category.title}</h3>
+              <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-900 mb-2 sm:mb-3">{category.title}</h3>
 
-              <p className="text-gray-600 mb-6">{category.description}</p>
+              <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">{category.description}</p>
 
               <ul className="space-y-2">
                 {category.items.map((item, itemIndex) => (
