@@ -72,6 +72,14 @@ export default function Contact() {
                     <h4 className="font-semibold text-gray-900 mb-1">Horários</h4>
                     <div className="mt-2 space-y-2 text-gray-700">
                       <div className="grid grid-cols-[1fr_auto] gap-x-6">
+                        <span>domingo</span>
+                        <span>Fechado</span>
+                      </div>
+                      <div className="grid grid-cols-[1fr_auto] gap-x-6">
+                        <span>segunda-feira</span>
+                        <span>13:00-18:00</span>
+                      </div>
+                      <div className="grid grid-cols-[1fr_auto] gap-x-6">
                         <span>terça-feira</span>
                         <span>13:00-18:00</span>
                       </div>
@@ -90,14 +98,6 @@ export default function Contact() {
                       <div className="grid grid-cols-[1fr_auto] gap-x-6">
                         <span>sábado</span>
                         <span>12:00-15:00</span>
-                      </div>
-                      <div className="grid grid-cols-[1fr_auto] gap-x-6">
-                        <span>domingo</span>
-                        <span>Fechado</span>
-                      </div>
-                      <div className="grid grid-cols-[1fr_auto] gap-x-6">
-                        <span>segunda-feira</span>
-                        <span>13:00-18:00</span>
                       </div>
                     </div>
                   </div>
@@ -138,4 +138,42 @@ export default function Contact() {
               </div>
 
               <a
-                href={build
+                href={buildWhatsAppUrl('Olá! Quero fazer um pedido/orçamento.')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary w-full flex items-center justify-center gap-2 mt-8"
+              >
+                <MessageCircle className="w-5 h-5" />
+                <span>Chamar no WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col h-full">
+            <div className="min-h-[420px] lg:flex-1">
+              <iframe
+                title="Mapa"
+                src={buildMapsEmbedUrl()}
+                className="h-full w-full"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+
+            <div className="p-6">
+              <a
+                href={buildWhatsAppUrl('Olá! Gostaria de fazer um pedido/orçamento.')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary w-full flex items-center justify-center gap-2"
+              >
+                <MessageCircle className="w-5 h-5" />
+                <span>Peça pelo WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
