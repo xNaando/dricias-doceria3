@@ -6,32 +6,32 @@ export default function Gallery() {
     {
       title: 'Bolos decorados',
       category: 'Festas',
-      imageUrl: 'https://picsum.photos/id/1080/1200/1200',
+      imageUrl: 'https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1200',
     },
     {
       title: 'Doces para mesa',
       category: 'Eventos',
-      imageUrl: 'https://picsum.photos/id/292/1200/1200',
+      imageUrl: 'https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=1200',
     },
     {
       title: 'Caixinhas presente',
       category: 'Presentes',
-      imageUrl: 'https://picsum.photos/id/431/1200/1200',
+      imageUrl: 'https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1200',
     },
     {
       title: 'Bolos caseiros',
       category: 'Dia a dia',
-      imageUrl: 'https://picsum.photos/id/312/1200/1200',
+      imageUrl: 'https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&w=1200',
     },
     {
       title: 'Sobremesas',
       category: 'Família',
-      imageUrl: 'https://picsum.photos/id/425/1200/1200',
+      imageUrl: 'https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg?auto=compress&cs=tinysrgb&w=1200',
     },
     {
       title: 'Temas personalizados',
       category: 'Sob encomenda',
-      imageUrl: 'https://picsum.photos/id/488/1200/1200',
+      imageUrl: 'https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?auto=compress&cs=tinysrgb&w=1200',
     },
   ]
 
@@ -62,7 +62,7 @@ export default function Gallery() {
                 className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
                 onError={(event) => {
-                  event.currentTarget.src = 'https://picsum.photos/seed/doceria-fallback/1200/1200'
+                  event.currentTarget.src = 'https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1200'
                 }}
               />
 
