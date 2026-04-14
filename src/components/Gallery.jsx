@@ -81,7 +81,7 @@ export default function Gallery() {
             href={buildWhatsAppUrl('Olá! Queria ver mais fotos e opções de encomenda.')}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary inline-flex items-center gap-2 w-full sm:w-auto justify-center"
+            className="btn-secondary inline-flex items-center gap-2"
           >
             <MessageCircle className="w-5 h-5" />
             <span>Pedir catálogo no WhatsApp</span>

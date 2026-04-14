@@ -78,7 +78,7 @@ export default function Footer() {
               href={buildWhatsAppUrl('Olá! Quero fazer um pedido/orçamento.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-full bg-green-500 px-5 py-3 font-semibold hover:bg-green-600 transition-colors"
+              className="mt-6 inline-flex justify-center items-center gap-2 rounded-full bg-green-500 px-5 py-3 font-semibold hover:bg-green-600 transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp

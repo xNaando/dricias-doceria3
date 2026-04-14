@@ -56,7 +56,7 @@ export default function FAQ() {
             href={buildWhatsAppUrl('Olá! Tenho uma dúvida sobre uma encomenda.')}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary inline-flex items-center gap-2 w-full sm:w-auto justify-center"
+            className="btn-primary inline-flex items-center gap-2"
           >
             Tirar dúvida no WhatsApp
           </a>

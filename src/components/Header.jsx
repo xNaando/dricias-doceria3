@@ -55,7 +55,7 @@ export default function Header() {
 
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t bg-white">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col items-start gap-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
@@ -70,7 +70,7 @@ export default function Header() {
                 href={buildWhatsAppUrl('Olá! Gostaria de fazer um pedido/orçamento.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary text-center text-sm w-full"
+                className="btn-primary text-center text-sm inline-flex items-center justify-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pedir no WhatsApp

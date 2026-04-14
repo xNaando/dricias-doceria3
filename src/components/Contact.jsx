@@ -137,15 +137,17 @@ export default function Contact() {
                 </div>
               </div>
 
-              <a
-                href={buildWhatsAppUrl('Olá! Quero fazer um pedido/orçamento.')}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary w-full flex items-center justify-center gap-2 mt-8"
-              >
-                <MessageCircle className="w-5 h-5" />
-                <span>Chamar no WhatsApp</span>
-              </a>
+              <div className="mt-8 flex justify-center sm:justify-start">
+                <a
+                  href={buildWhatsAppUrl('Olá! Quero fazer um pedido/orçamento.')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary inline-flex items-center justify-center gap-2"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  <span>Chamar no WhatsApp</span>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -160,12 +162,12 @@ export default function Contact() {
               />
             </div>
 
-            <div className="p-4 sm:p-6">
+            <div className="p-4 sm:p-6 flex justify-center sm:justify-start">
               <a
                 href={buildWhatsAppUrl('Olá! Gostaria de fazer um pedido/orçamento.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary w-full flex items-center justify-center gap-2"
+                className="btn-primary inline-flex items-center justify-center gap-2"
               >
                 <MessageCircle className="w-5 h-5" />
                 <span>Peça pelo WhatsApp</span>

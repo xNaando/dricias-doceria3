@@ -9,24 +9,33 @@ export default function Hero() {
 
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-          <div className="space-y-6 sm:space-y-8">
-            <div className="flex flex-wrap items-center gap-3">
-              <div className="flex items-center gap-1">
-                <Star className="w-4 h-4 sm:w-5 sm:h-5 text-accent-500 fill-accent-500" />
-                <Star className="w-4 h-4 sm:w-5 sm:h-5 text-accent-500 fill-accent-500" />
-                <Star className="w-4 h-4 sm:w-5 sm:h-5 text-accent-500 fill-accent-500" />
-                <Star className="w-4 h-4 sm:w-5 sm:h-5 text-accent-500 fill-accent-500" />
-                <Star className="w-4 h-4 sm:w-5 sm:h-5 text-accent-500 fill-accent-500" />
+          <div className="space-y-6 sm:space-y-8 text-center sm:text-left max-w-xl mx-auto lg:mx-0">
+            <div className="flex flex-col sm:flex-row items-center sm:items-center gap-2 sm:gap-3">
+              <div className="sm:hidden inline-flex items-center gap-2 rounded-full bg-white/70 backdrop-blur border border-white px-3 py-1 text-sm text-gray-700 shadow-sm">
+                <Star className="w-4 h-4 text-accent-500 fill-accent-500" />
+                <span className="font-semibold">5.0</span>
+                <span className="text-gray-400">•</span>
+                <span className="font-medium">Avaliações</span>
               </div>
-              <span className="text-sm sm:text-base text-gray-600 font-medium">Avaliações 5 estrelas</span>
-              <span className="text-gray-400">•</span>
-              <span className="inline-flex items-center gap-2 text-sm sm:text-base text-gray-600 font-medium">
+
+              <div className="hidden sm:flex items-center gap-3">
+                <div className="flex items-center gap-1">
+                  <Star className="w-5 h-5 text-accent-500 fill-accent-500" />
+                  <Star className="w-5 h-5 text-accent-500 fill-accent-500" />
+                  <Star className="w-5 h-5 text-accent-500 fill-accent-500" />
+                  <Star className="w-5 h-5 text-accent-500 fill-accent-500" />
+                  <Star className="w-5 h-5 text-accent-500 fill-accent-500" />
+                </div>
+                <span className="text-gray-600 font-medium">Avaliações 5 estrelas</span>
+              </div>
+
+              <span className="inline-flex items-center gap-2 rounded-full bg-white/70 backdrop-blur border border-white px-3 py-1 text-sm text-gray-700 shadow-sm">
                 <MapPin className="w-4 h-4 text-primary-600" />
-                {site.regionLine}
+                <span className="font-medium">{site.regionLine}</span>
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight tracking-tight">
               Doces que
               <span className="text-gradient block">encantam</span> em cada detalhe
             </h1>
@@ -36,34 +45,34 @@ export default function Hero() {
               personalizado pelo WhatsApp.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-3 sm:gap-4">
               <a
                 href={buildWhatsAppUrl('Olá! Gostaria de fazer um pedido/orçamento.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary flex items-center justify-center gap-2 w-full sm:w-auto"
+                className="btn-primary inline-flex items-center justify-center gap-2"
               >
                 <span>Fazer pedido</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a href="#products" className="btn-secondary flex items-center justify-center gap-2 w-full sm:w-auto">
+              <a href="#products" className="btn-secondary inline-flex items-center justify-center gap-2">
                 <Heart className="w-5 h-5" />
                 <span>Ver produtos</span>
               </a>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-2 sm:pt-4">
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary-600">Artesanal</div>
-                <div className="text-sm text-gray-600">feito com carinho</div>
+            <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-2 sm:pt-4">
+              <div className="rounded-2xl bg-white/70 backdrop-blur border border-white p-3 sm:p-4 shadow-sm">
+                <div className="text-base sm:text-xl lg:text-3xl font-bold text-primary-600">Artesanal</div>
+                <div className="text-xs sm:text-sm text-gray-600 mt-1">feito com carinho</div>
               </div>
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary-600">Sob encomenda</div>
-                <div className="text-sm text-gray-600">do jeitinho que você quer</div>
+              <div className="rounded-2xl bg-white/70 backdrop-blur border border-white p-3 sm:p-4 shadow-sm">
+                <div className="text-base sm:text-xl lg:text-3xl font-bold text-primary-600">Sob encomenda</div>
+                <div className="text-xs sm:text-sm text-gray-600 mt-1">do jeitinho que você quer</div>
               </div>
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary-600">Entrega/retirada</div>
-                <div className="text-sm text-gray-600">conforme combinado</div>
+              <div className="rounded-2xl bg-white/70 backdrop-blur border border-white p-3 sm:p-4 shadow-sm">
+                <div className="text-base sm:text-xl lg:text-3xl font-bold text-primary-600">Entrega</div>
+                <div className="text-xs sm:text-sm text-gray-600 mt-1">retirada/entrega</div>
               </div>
             </div>
           </div>
