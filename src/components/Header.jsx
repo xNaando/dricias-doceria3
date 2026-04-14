@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
-      <nav className="container-custom">
+      <nav className="container-custom px-4 md:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           <a href="#home" className="flex items-center gap-2 min-w-0">
             <Cake className="w-7 h-7 sm:w-8 sm:h-8 text-primary-600 flex-shrink-0" />
@@ -45,7 +45,7 @@ export default function Header() {
           </div>
 
           <button
-            className="md:hidden p-2 -mr-2"
+            className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Menu"
           >
