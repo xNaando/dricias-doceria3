@@ -3,7 +3,7 @@ export const site = {
   whatsappNumber: "5531984374621",
   phoneDisplay: "(31) 98437-4621",
   addressLine: "R. Francisco Gerônimo da Silva, 303",
-  regionLine: "Belo Horizonte e região (MG)",
+  regionLine: "Santa Luzia e região (MG)",
 }
 
 export function buildWhatsAppUrl(message) {
