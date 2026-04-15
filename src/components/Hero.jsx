@@ -5,7 +5,10 @@ export default function Hero() {
   const videoSrc = `${import.meta.env.BASE_URL}hero-background.mp4`
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-16 sm:pt-20 overflow-hidden">
+    <section
+      id="home"
+      className="relative h-[100svh] supports-[height:100dvh]:h-[100dvh] sm:min-h-screen flex items-center box-border pt-16 sm:pt-20 overflow-hidden"
+    >
       <div className="absolute inset-0 pointer-events-none">
         <video
           className="h-full w-full object-cover"
@@ -95,7 +98,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="hidden lg:block relative">
             <div className="relative rounded-none sm:rounded-3xl overflow-hidden shadow-2xl">
               <div className="aspect-square bg-gradient-to-br from-primary-100 to-accent-100">
                 <img
